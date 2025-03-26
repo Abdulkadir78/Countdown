@@ -35,18 +35,18 @@ export const Form: React.FC<FormProps> = ({ onSubmit }) => {
           Enter Date & Time
         </label>
 
-        <div className="flex items-center gap-2 mt-1">
+        <div className="grid items-center gap-2 mt-1">
           <input
             ref={dateRef}
             type="date"
-            className="border rounded-sm py-2 px-3 w-full sm:w-[180px] appearance-none"
+            className="border rounded-sm py-2 px-3 w-full min-[370px]:w-[180px]"
             aria-labelledby="date-time"
             required
           />
           <input
             ref={timeRef}
             type="time"
-            className="border rounded-sm py-2 px-3 w-full sm:w-[180px]"
+            className="border rounded-sm py-2 px-3 w-full min-[370px]:w-[180px]"
             aria-labelledby="date-time"
             required
           />
