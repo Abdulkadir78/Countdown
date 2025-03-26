@@ -22,7 +22,7 @@ const App = () => {
     setDateTime(dt || "");
     setColor(c || "");
     setTitle(t || "");
-    setShowConfetti(Boolean(sc));
+    setShowConfetti(sc === "true");
     setIsLoading(false);
   }, []);
 
